@@ -10,14 +10,20 @@ namespace Messenger
 
         public Form1()
         {
-            InitializeComponent();
-
-            this.Icon = new Icon(
-                Path.Combine(AppDomain.CurrentDomain.BaseDirectory,
-                "messengerView.ico")
-            );
-
-            InitializeWebView();
+            try
+            {
+                InitializeComponent();
+                InitializeWebView();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    ex.Message.ToString(),
+                    "Startup error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+            }
         }
 
         private async void InitializeWebView()
@@ -31,7 +37,7 @@ namespace Messenger
                 null,
                 Path.Combine(
                     Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                    "MyMessengerApp"
+                    "MessengerView"
                 )
             );
 
@@ -41,20 +47,7 @@ namespace Messenger
             webView.CoreWebView2.Settings.AreDefaultContextMenusEnabled = false;
 
             Controls.Add(webView);
-
-            try
-            {
-                webView.Source = new Uri("https://www.messenger.com");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(
-                    ex.ToString(),
-                    "Startup error",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
-                );
-            }
+            webView.Source = new Uri("https://www.messenger.com");
         }
     }
 }

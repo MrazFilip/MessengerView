@@ -6,14 +6,19 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+	<PublishSingleFile>true</PublishSingleFile>
+	<SelfContained>true</SelfContained>
+	<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+	<PublishReadyToRun>false</PublishReadyToRun>
+	<ApplicationIcon>messengerViewNewIcon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="messengerView.ico" />
+    <None Remove="messengerViewNewIcon.ico" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="messengerView.ico">
+    <EmbeddedResource Include="messengerViewNewIcon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
