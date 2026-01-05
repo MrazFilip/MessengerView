@@ -8,13 +8,13 @@ The app is not published by known developer so both Google Drive and Windows Def
 ---
 ### Steps to running
 ##### 1. Google Screaming
-<img width="592" height="238" alt="image" src="https://github.com/user-attachments/assets/c4d2aa94-3da6-492d-8888-957737259334" />
+<img width="592" height="238" alt="image" src="https://github.com/user-attachments/assets/c4d2aa94-3da6-492d-8888-957737259334" /></br>
 Click the blue button "Download Either Way"
 
 ##### 2. Windows Defender
-<img width="564" height="539" alt="image" src="https://github.com/user-attachments/assets/a68d5db8-6a06-4f05-b528-01579dfb0f1d" />
+<img width="564" height="539" alt="image" src="https://github.com/user-attachments/assets/a68d5db8-6a06-4f05-b528-01579dfb0f1d" /></br>
 Click "See more"
-<img width="543" height="504" alt="image" src="https://github.com/user-attachments/assets/77146bb3-9566-43a0-b587-1a66b26eb8c7" />
+<img width="543" height="504" alt="image" src="https://github.com/user-attachments/assets/77146bb3-9566-43a0-b587-1a66b26eb8c7" /></br>
 Click "Run anyway"
 
 ##### 3. Enjoy!
